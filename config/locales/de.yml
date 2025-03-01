@@ -9,3 +9,11 @@ de:
     home: "Startseite"
     agenda: "Programm"
     speakers: "Redner"
+  registrations:
+    new: "Neue Anmeldung"
+    full_name: "Vollständiger Name"
+    drink_package: "Möchten Sie das Getränkepaket (€3,50) kaufen?"
+    lunch: "Möchten Sie am 23. ein Mittagessen bestellen?"
+    social: "Werden Sie am 22. am gesellschaftlichen Event teilnehmen?"
+    register: "Registrieren"
+    successful: "Anmeldung erfolgreich! Wir sehen uns bei der Veranstaltung."

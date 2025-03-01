@@ -38,4 +38,12 @@ en:
     home: "Home"
     agenda: "Agenda"
     speakers: "Speakers"
+  registrations:
+    new: "New Registration"
+    full_name: "Full Name"
+    drink_package: "Would you like to buy the drink package (€3.50)?"
+    lunch: "Would you like lunch on the 23rd?"
+    social: "Will you join the social event on the 22nd?"
+    register: "Register"
+    successful: "Registration successful! See you at the event."
 

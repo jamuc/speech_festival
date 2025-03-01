@@ -13,7 +13,7 @@
   <% end %>
 
   <div>
-    <%= form.label :name, "Full Name", style: "display: block" %>
+    <%= form.label :name, t("registrations.full_name"), style: "display: block" %>
     <%= form.text_field :name, required: true %>
   </div>
 
@@ -23,7 +23,7 @@
   </div>
 
   <div class="radio-group">
-    <p>Would you like to buy the drink package (€3.50)? <span class="required">*</span></p>
+    <p><%= t("registrations.drink_package") %><span class="required">*</span></p>
     <div class="radio-options">
     <%= form.radio_button :drink_package, true, id: "drink_package_yes", required: true %>
     <%= form.label :drink_package_yes, "Yes" %>
@@ -33,7 +33,7 @@
   </div>
 
   <div class="radio-group">
-    <p>Would you like lunch on the 23rd? <span class="required">*</span></p>
+    <p><%= t("registrations.lunch") %><span class="required">*</span></p>
     <div class="radio-options">
     <%= form.radio_button :lunch, true, id: "lunch_yes", required: true %>
     <%= form.label :lunch_yes, "Yes" %>
@@ -43,7 +43,7 @@
   </div>
 
   <div class="radio-group">
-    <p>Will you join the social event on the 22nd? <span class="required">*</span></p>
+    <p><%= t("registrations.social") %><span class="required">*</span></p>
     <div class="radio-options">
     <%= form.radio_button :social_event, true, id: "social_event_yes", required: true %>
     <%= form.label :social_event_yes, "Yes" %>
@@ -53,7 +53,7 @@
   </div>
 
   <div>
-    <%= form.submit "Register", class: "submit-button" %>
+    <%= form.submit t("registrations.register"), class: "submit-button" %>
   </div>
 <% end %>
 </div>

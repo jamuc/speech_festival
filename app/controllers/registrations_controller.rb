@@ -9,7 +9,7 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new(registration_params)
 
     if @registration.save
-      redirect_to root_path, notice: "Registration successful! See you at the event."
+      redirect_to root_path, notice: t("registrations.successful")
     else
       render :new, status: :unprocessable_entity
     end

@@ -23,9 +23,7 @@
   </head>
 
   <body>
-    <div class="language-switcher">
-      <%= link_to (I18n.locale == :en ? "🇩🇪 Deutsch" : "🇬🇧 English"), url_for(locale: (I18n.locale == :en ? :de : :en)) %>
-    </div>
+    <%= render "shared/navbar" %>
     <%= yield %>
   </body>
 </html>

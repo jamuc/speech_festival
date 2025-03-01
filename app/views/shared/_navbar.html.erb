@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <ul class="nav-links">
+      <li><a href="<%= root_path %>"><%= t("home") %></a></li>
+      <li><a href="#"><%= t("agenda") %></a></li>
+      <li><a href="#"><%= t("speakers") %></a></li>
+    </ul>
+
+    <div class="language-switcher">
+      <%= link_to (I18n.locale == :en ? "🇩🇪 Deutsch" : "🇬🇧 English"), url_for(locale: (I18n.locale == :en ? :de : :en)) %>
+    </div>
+  </div>
+</nav>

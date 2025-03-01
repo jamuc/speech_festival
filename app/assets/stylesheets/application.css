@@ -9,27 +9,63 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
- .language-switcher {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+ /* NAVBAR */
+.navbar {
+    background: #004165;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F4A261;
+}
+
+/* LANGUAGE SWITCHER */
+.language-switcher {
+    font-size: 1rem;
     font-weight: bold;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 99999;
 }
 
 .language-switcher a {
+    color: white;
     text-decoration: none;
-    color: #004165;
-    padding: 8px 12px;
+    margin-left: 10px;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: #f5f5f5;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.3s;
 }
 
-.language-switcher a:hover {
-    background-color: #e0e0e0;
+.language-switcher a:hover,
+.language-switcher a.active {
+    background: #F4A261;
 }

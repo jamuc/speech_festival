@@ -2,11 +2,10 @@
 <div class="overlay"></div>
 <div class="hero-content">
     <%= image_tag "D95.png", alt: "D96 logo", class: "logo"%>
-    <h1>Munich Speech Festival</h1>
-    <p class="date">22nd & 23rd March</p>
-    <a href="#register" class="register-button">Register Now Free!</a>
+    <h1><%= t("welcome") %></h1>
+    <p class="date"><%= t("date") %></p>
+    <a href="#register" class="register-button"><%= t("register") %></a>
 </div>
-<div class="scroll-down">↓ Scroll Down</div>
 </section>
 <div class="section-divider"></div>
 
@@ -16,10 +15,10 @@
             <h2>Stadtteilkultur 2411 e.V.</h2>
             <p>
                 <a href="https://maps.app.goo.gl/JX6h2eWFV3kmxyXs7" target="_blank" aria-label="View location on Google Maps">
-                    Blodigstraße 4/3rd floor, 80933 München
+                    <%= t("address") %>
                 </a>
             </p>
-            <p>The Munich Speech Festival will be held at Stadtteilkultur, a vibrant cultural venue known for hosting inspiring events. Located in the heart of Munich, the venue provides a welcoming atmosphere for speakers and attendees alike.</p>
+            <p><%= t("description") %></p>
         </div>
         <div class="location-map">
             <a href="https://maps.app.goo.gl/JX6h2eWFV3kmxyXs7" target="_blank" aria-label="View location on Google Maps">

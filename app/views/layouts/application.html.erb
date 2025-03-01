@@ -22,10 +22,6 @@
     <%= favicon_link_tag 'android-chrome-192x192.png', rel: 'icon', type: 'image/png', sizes: '192x192' %>
     <%= favicon_link_tag 'android-chrome-512x512.png', rel: 'icon', type: 'image/png', sizes: '512x512' %>
 
-    <!-- Web Manifest (For PWA support) -->
-    <%= tag :link, href: asset_path('site.webmanifest'), rel: 'manifest' %>
-
-
     <%= yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>

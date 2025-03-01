@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    min-height: 60vh; /* Adjust height as needed */
+    background: url('https://t4.ftcdn.net/jpg/05/23/92/87/360_F_523928701_hqgiqaPJH7IgGQnWV7hdglTik1XFe9WA.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: white;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(10px); }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-divider {
+    height: 30px;  /* Adjust thickness */
+    background-color: #772432;  /* Set color */
+    width: 100%;  /* Full width */
+    margin: 0;  /* Remove spacing */
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+}
+
+.register-button {
+    display: inline-block;
+    padding: 16px 32px; /* Large button size */
+    font-size: 1.5rem; /* Make text large */
+    font-weight: bold;
+    color: white; /* Text color */
+    background: linear-gradient(135deg, #004165, #006d91); /* Button color */
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.register-button:hover {
+    background-color: #8f9998; /* Slightly darker on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    transform: translateY(-3px); /* Slight hover lift */
+}
+
+.location-section {
+    padding: 60px 10%;
+    background-color: #f5f5f5; /* Light background to distinguish the section */
+}
+
+.location-row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-text {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.location-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #004165; /* Match button color */
+}
+
+.location-text p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.location-map {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.location-map a {
+    display: block;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%; /* Keep the circular shape */
+    border: 8px solid #772432; /* Thick border */
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.location-map a:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents map interaction so the entire area is clickable */
+}
+
+/* ✅ Responsive Design: Stack Columns on Smaller Screens */
+@media (max-width: 768px) {
+    .location-row {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .location-text,
+    .location-map {
+        max-width: 100%; /* Full width */
+        padding-right: 0; /* Remove spacing */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+}

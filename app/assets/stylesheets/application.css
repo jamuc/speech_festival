@@ -8,8 +8,9 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+/* NAVBAR */
 
- /* NAVBAR */
+/* NAVBAR */
 .navbar {
     background: #004165;
     padding: 15px 20px;
@@ -22,12 +23,29 @@
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensures menu left, switcher right */
     align-items: center;
     max-width: 1200px;
     margin: auto;
 }
 
+/* Left Side: Menu */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* NAVIGATION LINKS */
 .nav-links {
     list-style: none;
     display: flex;
@@ -50,10 +68,11 @@
     color: #F4A261;
 }
 
-/* LANGUAGE SWITCHER */
+/* LANGUAGE SWITCHER (Always on the Right) */
 .language-switcher {
     font-size: 1rem;
     font-weight: bold;
+    white-space: nowrap; /* Prevents wrapping */
 }
 
 .language-switcher a {
@@ -68,4 +87,36 @@
 .language-switcher a:hover,
 .language-switcher a.active {
     background: #F4A261;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-between; /* Ensures spacing */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #004165;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
 }

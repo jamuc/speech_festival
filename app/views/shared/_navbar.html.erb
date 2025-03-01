@@ -1,13 +1,23 @@
 <nav class="navbar">
   <div class="navbar-container">
-    <ul class="nav-links">
-      <li><a href="<%= root_path %>"><%= t("home") %></a></li>
-      <li><a href="#"><%= t("agenda") %></a></li>
-      <li><a href="#"><%= t("speakers") %></a></li>
-    </ul>
+    <div class="nav-left">
+      <!-- Menu button for mobile -->
+      <button class="hamburger" aria-label="Toggle navigation">
+        ☰
+      </button>
 
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="<%= root_path %>"><%= t('nav.home') %></a></li>
+        <li><a href="#"><%= t('nav.agenda') %></a></li>
+        <li><a href="#"><%= t('nav.speakers') %></a></li>
+      </ul>
+    </div>
+
+    <!-- Language Switcher on the Right -->
     <div class="language-switcher">
-      <%= link_to (I18n.locale == :en ? "🇩🇪 Deutsch" : "🇬🇧 English"), url_for(locale: (I18n.locale == :en ? :de : :en)) %>
+      <%= link_to "EN", url_for(locale: :en), data: { turbo_frame: "_top" }, class: "#{I18n.locale == :en ? 'active' : ''}" %> |
+      <%= link_to "DE", url_for(locale: :de), data: { turbo_frame: "_top" }, class: "#{I18n.locale == :de ? 'active' : ''}" %>
     </div>
   </div>
 </nav>

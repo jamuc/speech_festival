@@ -1,0 +1,70 @@
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .registration-form div {
+    margin-bottom: 20px;
+  }
+
+  .registration-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .registration-form input[type="text"],
+  .registration-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .radio-group {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .radio-group p {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .radio-options {
+    display: flex;
+    gap: 5px; /* Add spacing between the Yes/No options */
+    align-items: center;
+  }
+
+  .radio-group label {
+    font-weight: normal;
+    margin-right: 15px;
+  }
+
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #004165, #0077b6);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .submit-button:hover {
+    background: linear-gradient(to right, #003152, #005a8d);
+    transform: scale(1.05);
+  }

@@ -89,6 +89,41 @@
     background: #F4A261;
 }
 
+.flash-message {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #772432;
+    color: white;
+    padding: 20px 60px 20px 25px; /* Extra right padding for the close button */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    max-width: 90%; /* Ensures it doesn't take up too much space */
+    display: inline-block; /* Makes width adapt to content */
+    text-align: center;
+  }
+
+  /* Success and error variations */
+  .flash-message.success { background: #28a745; }
+  .flash-message.error { background: #dc3545; }
+
+  /* Close button ("X") - top-right but does NOT stretch the container */
+  .flash-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    line-height: 1;
+  }
+
 /* MOBILE MENU */
 @media (max-width: 768px) {
     .navbar-container {
@@ -119,4 +154,5 @@
     .nav-links li {
         padding: 10px 0;
     }
+
 }

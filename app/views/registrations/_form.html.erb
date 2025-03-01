@@ -1,0 +1,59 @@
+<div class="registration-form">
+<%= form_with(model: registration) do |form| %>
+  <% if registration.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+        <% registration.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, "Full Name", style: "display: block" %>
+    <%= form.text_field :name, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email, required: true %>
+  </div>
+
+  <div class="radio-group">
+    <p>Would you like to buy the drink package (€3.50)? <span class="required">*</span></p>
+    <div class="radio-options">
+    <%= form.radio_button :drink_package, true, id: "drink_package_yes", required: true %>
+    <%= form.label :drink_package_yes, "Yes" %>
+    <%= form.radio_button :drink_package, false, id: "drink_package_no", required: true %>
+    <%= form.label :drink_package_no, "No" %>
+    </div>
+  </div>
+
+  <div class="radio-group">
+    <p>Would you like lunch on the 23rd? <span class="required">*</span></p>
+    <div class="radio-options">
+    <%= form.radio_button :lunch, true, id: "lunch_yes", required: true %>
+    <%= form.label :lunch_yes, "Yes" %>
+    <%= form.radio_button :lunch, false, id: "lunch_no", required: true %>
+    <%= form.label :lunch_no, "No" %>
+    </div>
+  </div>
+
+  <div class="radio-group">
+    <p>Will you join the social event on the 22nd? <span class="required">*</span></p>
+    <div class="radio-options">
+    <%= form.radio_button :social_event, true, id: "social_event_yes", required: true %>
+    <%= form.label :social_event_yes, "Yes" %>
+    <%= form.radio_button :social_event, false, id: "social_event_no", required: true %>
+    <%= form.label :social_event_no, "No" %>
+    </div>
+  </div>
+
+  <div>
+    <%= form.submit "Register", class: "submit-button" %>
+  </div>
+<% end %>
+</div>

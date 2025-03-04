@@ -39,11 +39,14 @@ en:
     agenda: "Agenda"
     speakers: "Speakers"
   registrations:
+    yes: "Yes"
+    no: "No"
     new: "New Registration"
     full_name: "Full Name"
-    drink_package: "Would you like to buy the drink package (€3.50)?"
-    lunch: "Would you like lunch on the 23rd?"
-    social: "Will you join the social event on the 22nd?"
+    drink_package_22: "Would you like to have drinks on-site 22nd (e.g: Coke, Tea, Coffee, etc.) (€3.50)?.\n Select 'No' if you will bring your own refreshments."
+    drink_package_23: "Would you like to have drinks on-site 23rd (e.g: Coke, Tea, Coffee, etc.) (€3.50)?. \n Select 'No' if you will brin your own refreshments."
+    social: "Will you join the amazing social event on the 22nd? This includes the 'Tips for Story Telling' event."
+    lunch: "Would you like lunch on the 23rd?. Select 'No' if you will bring your own."
     register: "Register"
     successful: "Registration successful! See you at the event."
 

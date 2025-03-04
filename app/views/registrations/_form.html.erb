@@ -23,22 +23,22 @@
   </div>
 
   <div class="radio-group">
-    <p><%= t("registrations.drink_package") %><span class="required">*</span></p>
+    <p><%= t("registrations.drink_package_22") %><span class="required">*</span></p>
     <div class="radio-options">
-    <%= form.radio_button :drink_package, true, id: "drink_package_yes", required: true %>
-    <%= form.label :drink_package_yes, "Yes" %>
-    <%= form.radio_button :drink_package, false, id: "drink_package_no", required: true %>
-    <%= form.label :drink_package_no, "No" %>
+    <%= form.radio_button :drink_package_22, true, id: "drink_package_yes", required: true %>
+    <%= form.label :drink_package22_yes, t("registrations.yes") %>
+    <%= form.radio_button :drink_package_22, false, id: "drink_package_no", required: true %>
+    <%= form.label :drink_package22_no, t('registrations.no') %>
     </div>
   </div>
 
   <div class="radio-group">
-    <p><%= t("registrations.lunch") %><span class="required">*</span></p>
+    <p><%= t("registrations.drink_package_23") %><span class="required">*</span></p>
     <div class="radio-options">
-    <%= form.radio_button :lunch, true, id: "lunch_yes", required: true %>
-    <%= form.label :lunch_yes, "Yes" %>
-    <%= form.radio_button :lunch, false, id: "lunch_no", required: true %>
-    <%= form.label :lunch_no, "No" %>
+    <%= form.radio_button :drink_package_23, true, id: "drink_package_yes", required: true %>
+    <%= form.label :drink_package23_yes, t('registrations.yes') %>
+    <%= form.radio_button :drink_package_23, false, id: "drink_package_no", required: true %>
+    <%= form.label :drink_package23_no, t('registrations.no') %>
     </div>
   </div>
 
@@ -46,9 +46,19 @@
     <p><%= t("registrations.social") %><span class="required">*</span></p>
     <div class="radio-options">
     <%= form.radio_button :social_event, true, id: "social_event_yes", required: true %>
-    <%= form.label :social_event_yes, "Yes" %>
+    <%= form.label :social_event_yes, t('registrations.yes') %>
     <%= form.radio_button :social_event, false, id: "social_event_no", required: true %>
-    <%= form.label :social_event_no, "No" %>
+    <%= form.label :social_event_no, t('registrationsno') %>
+    </div>
+  </div>
+
+  <div class="radio-group">
+    <p><%= t("registrations.lunch") %><span class="required">*</span></p>
+    <div class="radio-options">
+    <%= form.radio_button :lunch, true, id: "lunch_yes", required: true %>
+    <%= form.label :lunch_yes, t('yes') %>
+    <%= form.radio_button :lunch, false, id: "lunch_no", required: true %>
+    <%= form.label :lunch_no, t('no') %>
     </div>
   </div>
 

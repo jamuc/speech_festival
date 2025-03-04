@@ -20,3 +20,10 @@ de:
     lunch: "Möchtest du am 23. Mittagessen? \nWähl 'Nein', wenn du dein eigenes mitbringst."
     register: "Registrieren"
     successful: "Anmeldung erfolgreich! Wir sehen uns bei der Veranstaltung."
+  storytelling:
+    title: "Tipps zum Geschichtenerzählen"
+    description: "Die Storyteller's Night ist als monatliche Veranstaltung geplant, bei der Menschen Geschichten aus ihrem Leben teilen. Sie können glücklich, traurig, lustig oder gruselig sein. Hier gibt es alles! Wenn du möchtest, kannst du selbst eine Geschichte erzählen."
+    fb_link: "Besuche die Facebook-Seite"
+    event_details: "Begleite uns zu einem Abend voller Geschichten!"
+    event_date: "📅 Samstag, 22. März - Abendveranstaltung"
+    register: "Für die Veranstaltung anmelden"

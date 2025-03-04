@@ -49,4 +49,11 @@ en:
     lunch: "Would you like lunch on the 23rd?. Select 'No' if you will bring your own."
     register: "Register"
     successful: "Registration successful! See you at the event."
+  storytelling:
+    title: "Hints on Storytelling"
+    description: "The Storyteller's Night is planned as a monthly event where people share stories from their lives. They can be happy, sad, funny or scary stories. This is a place where you get everything! If you want, you can be one of the storytellers."
+    fb_link: "Visit Facebook Page"
+    event_details: "Join us for an evening of storytelling!"
+    event_date: "📅 Saturday, 22nd March - Evening Social Event"
+    register: "Register for the Event"
 

@@ -1,0 +1,55 @@
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 10px; /* Space between items */
+    border: 1px solid #ccc; /* Table border */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for the table */
+    background: white; /* Table background */
+    padding: 15px; /* Padding around */
+}
+
+.cell {
+    padding: 15px; /* Inner padding for the cells */
+}
+
+.cell:last-child {
+    border-bottom: none; /* Remove bottom border for the last cell */
+}
+
+.image-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-cell img {
+    max-width: 120px; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.info-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.qr-code {
+    margin: 10px 0; /* Spacing around QR code */
+}
+
+.table a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    text-align: center; /* Centering text */
+    margin-top: 10px; /* Margin above text link */
+}
+
+.table a:hover {
+    text-decoration: underline;
+}

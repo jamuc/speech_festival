@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "agenda/index"
   get "storytelling/index"
   resources :registrations, only: [:new, :create]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

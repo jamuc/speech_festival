@@ -3,7 +3,6 @@ source "https://rubygems.org"
 ruby '3.4.2'
 
 gem "pg"
-gem "delayed_job_active_record"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"

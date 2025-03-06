@@ -14,6 +14,7 @@ module SpeechFestival
     config.i18n.default_locale = :en
     config.i18n.available_locales = [:en, :de] # English and German
     config.i18n.fallbacks = true
+    config.active_job.queue_adapter = :delayed_job
 
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do

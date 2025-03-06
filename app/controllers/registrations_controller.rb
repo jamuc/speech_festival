@@ -21,6 +21,6 @@ class RegistrationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def registration_params
-      params.expect(registration: [ :name, :email, :drink_package, :lunch, :social_event ])
+      params.expect(registration: [ :name, :email, :drink_package_22, :drink_package_23, :lunch, :social_event ])
     end
 end

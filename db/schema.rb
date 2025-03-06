@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_03_06_101830) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_06_155839) do
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer "priority", default: 0, null: false
     t.integer "attempts", default: 0, null: false
@@ -29,10 +29,11 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_06_101830) do
   create_table "registrations", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.boolean "drink_package"
+    t.boolean "drink_package_22"
     t.boolean "lunch"
     t.boolean "social_event"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "drink_package_23"
   end
 end

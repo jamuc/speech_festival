@@ -14,6 +14,8 @@ de:
     no: "Nein"
     new: "Neue Anmeldung"
     full_name: "Vollständiger Name"
+    attendance_22nd_of_march: "Nehme am 22.03. teil"
+    attendance_23rd_of_march: "Nehme am 23.03. teil"
     drink_package_22: "Möchtest du am 22. vor Ort Getränke haben (z. B. Cola, Tee, Kaffee usw.) für 3,50 €? Wähl 'Nein', wenn du deine eigenen mitbringst."
     drink_package_23: "Möchtest du am 23. vor Ort Getränke haben (z. B. Cola, Tee, Kaffee usw.) für 3,50 €? Wähl 'Nein', wenn du deine eigenen mitbringst."
     social: "Bist du beim coolen Social Event am 22. dabei? Dazu gehört auch das 'Tipps fürs Storytelling'-Event."

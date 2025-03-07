@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_03_06_155839) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_07_142630) do
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer "priority", default: 0, null: false
     t.integer "attempts", default: 0, null: false
@@ -35,5 +35,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_06_155839) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "drink_package_23"
+    t.boolean "attending_22nd_march"
+    t.boolean "attending_23rd_march"
   end
 end

@@ -43,6 +43,8 @@ en:
     no: "No"
     new: "New Registration"
     full_name: "Full Name"
+    attendance_22nd_of_march: "Joining on 22nd March"
+    attendance_23rd_of_march: "Joining on 23rd March"
     drink_package_22: "Would you like to have drinks on-site 22nd (e.g: Coke, Tea, Coffee, etc.) (€3.50)?.\n Select 'No' if you will bring your own refreshments."
     drink_package_23: "Would you like to have drinks on-site 23rd (e.g: Coke, Tea, Coffee, etc.) (€3.50)?. \n Select 'No' if you will brin your own refreshments."
     social: "Will you join the amazing social event on the 22nd? This includes the 'Tips for Story Telling' event."

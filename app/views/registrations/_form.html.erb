@@ -22,6 +22,18 @@
     <%= form.text_field :email, required: true %>
   </div>
 
+  <div>
+    <label>
+      <input type="checkbox" name="attendance[]" value="22nd March">
+      <%= t("registrations.attendance_22nd_of_march") %>
+    </label>
+  <br>
+    <label>
+      <input type="checkbox" name="attendance[]" value="23rd March">
+      <%= t("registrations.attendance_23rd_of_march") %>
+    </label>
+  </div>
+
   <div class="radio-group">
     <p><%= t("registrations.drink_package_22") %><span class="required">*</span></p>
     <div class="radio-options">

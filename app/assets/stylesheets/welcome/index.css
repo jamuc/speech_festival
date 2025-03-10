@@ -136,10 +136,10 @@ h1 {
 .badge {
     background: #f2df74;
     color: #222222;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -173,6 +173,8 @@ h1 {
     }
 
     .badge {
+        width: 120px;
+        height: 120px;
         left: 0px;
     }
 }

@@ -18,6 +18,7 @@
 
 @media (max-width: 768px) {
   .storytelling {
-    margin-top: 140px;
+    margin-top: 180px;
+    padding: 0 20px;
   }
 }

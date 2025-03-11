@@ -53,7 +53,7 @@ en:
     register: "Register"
     successful: "Registration successful! See you at the event."
   storytelling:
-    title: "Hints on Storytelling"
+    title: "Tips on Storytelling"
     description: "The Storyteller's Night is planned as a monthly event where people share stories from their lives. They can be happy, sad, funny or scary stories. This is a place where you get everything! If you want, you can be one of the storytellers."
     fb_link: "Visit Facebook Page"
     event_details: "Join us for an evening of storytelling!"

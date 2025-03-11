@@ -149,6 +149,26 @@
     border: 1px solid #ccc; /* Optional border */
     box-sizing: border-box; /* Include padding in the width */
 }
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+  }
+
+/* Container to center everything */
+.storytelling {
+    display: flex;
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Vertically center everything */
+    align-items: center;     /* Horizontally center everything */
+    height: 100vh;
+    padding: 0 20px;           /* Full viewport height */
+    margin: 0;
+}
+
+
 
 /* MOBILE MENU */
 @media (max-width: 768px) {
@@ -180,11 +200,15 @@
     .nav-links li {
         padding: 10px 0;
     }
-/*
-    .flash-message {
-        max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    } */
 
+    .storytelling {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Styles for iPhone SE and similar small screens */
+    .storytelling {
+        margin-top: 320px;
+    }
 }
